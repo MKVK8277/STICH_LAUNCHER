@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Stitch Launcher</string>
+    <string name="search_hint">Search apps</string>
+    <string name="focus_gate_title">Focus Moment</string>
+    <string name="focus_gate_message">This app requires your intentional decision. Continue?</string>
+    <string name="button_allow">Allow</string>
+    <string name="button_deny">Not Now</string>
+    <string name="button_delay">Delay 5m</string>
+    <string name="section_pinned">Pinned</string>
+    <string name="section_essential">Essential</string>
+    <string name="section_apps">Apps</string>
+    <string name="section_low_priority">Low Priority</string>
+</resources>
