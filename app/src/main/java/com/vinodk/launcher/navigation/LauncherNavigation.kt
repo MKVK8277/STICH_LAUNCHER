@@ -140,7 +140,16 @@ fun LauncherNavigation(
         }
     }
 }
-
+class HomeViewModelFactory(
+    private val appRepository: AppRepository
+) : ViewModelProvider.Factory {
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        if (modelClass.isAssignableFrom(HomeViewModel::class.java)) {
+            return HomeViewModel(appRepository) as T
+        }
+        throw IllegalArgumentException("Unknown ViewModel class")
+    }
+}
 class UsageTimerViewModelFactory(
     private val usageLogDao: com.vinodk.launcher.data.db.UsageLogDao
 ) : ViewModelProvider.Factory {
